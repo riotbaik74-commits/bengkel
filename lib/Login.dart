@@ -22,7 +22,14 @@ class _LoginPageState extends State<LoginPage> {
 
       body: Column(
         children: [
-          
+          Center(
+            child: Image(
+              image: AssetImage('asset/girr.png'),
+              width:350,
+              height:350,
+            ),
+          ),
+
           Center(
             child: Container(
               width: 300,
