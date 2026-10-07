@@ -20,7 +20,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Navigator.pop(context);
           },
         ),
-        title: Text("Blog"),
+        title: Text("Aplikasi Bengkel"),
       ),
 
       backgroundColor: Color(0xFFFFFFFF),
