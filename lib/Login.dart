@@ -9,14 +9,12 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   TextEditingController inputNama = TextEditingController();
-    TextEditingController inputPassword = TextEditingController();
+  TextEditingController inputPassword = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Aplikasi Bengkel"),
-      ),
+      appBar: AppBar(title: Text("Aplikasi Bengkel")),
 
       backgroundColor: Color(0xFFFFFFFF),
 
@@ -24,9 +22,9 @@ class _LoginPageState extends State<LoginPage> {
         children: [
           Center(
             child: Image(
-              image: AssetImage('asset/girr.png'),
-              width:350,
-              height:350,
+              image: AssetImage('asset/image/girr.png'),
+              width: 350,
+              height: 350,
             ),
           ),
 
@@ -48,9 +46,8 @@ class _LoginPageState extends State<LoginPage> {
             ),
           ),
 
-          Padding(padding: EdgeInsets.all(16)
-          ),
-                    Center(
+          Padding(padding: EdgeInsets.all(16)),
+          Center(
             child: Container(
               width: 300,
               color: Color.fromARGB(197, 220, 155, 155),
@@ -68,8 +65,7 @@ class _LoginPageState extends State<LoginPage> {
             ),
           ),
 
-          Padding(padding: EdgeInsets.all(16)
-          ),
+          Padding(padding: EdgeInsets.all(16)),
           ElevatedButton(
             child: Text("Login"),
             onPressed: () {
