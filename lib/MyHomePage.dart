@@ -12,6 +12,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build (BuildContext context) {
     return Scaffold(appBar: AppBar(title: Text("Aplikasi Bengkel")),
     backgroundColor: Color(0xFFB9C2BA),
+    
     );
   }
 }
