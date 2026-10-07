@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:aplikasibengkel/myhomepage.dart';
+import 'package:aplikasibengkel/Login.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(),
+      home: const LoginPage(),
     );
   }
 }
