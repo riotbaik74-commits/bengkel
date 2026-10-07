@@ -14,7 +14,13 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Aplikasi Bengkel"),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+        title: Text("Blog"),
       ),
 
       backgroundColor: Color(0xFFFFFFFF),
@@ -39,12 +45,13 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
 
-          Padding(padding: EdgeInsets.all(16)
+          Padding(
+            padding: EdgeInsets.all(16)
           ),
+
           ElevatedButton(
             child: Text("Tampilkan Nama"),
             onPressed: () {
-              // Logic
               print(inputNama.text);
             },
           ),
