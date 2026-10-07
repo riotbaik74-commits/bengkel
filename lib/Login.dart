@@ -23,8 +23,8 @@ class _LoginPageState extends State<LoginPage> {
           Center(
             child: Image(
               image: AssetImage('asset/image/girr.png'),
-              width: 350,
-              height: 350,
+              width: 175,
+              height: 175,
             ),
           ),
 
