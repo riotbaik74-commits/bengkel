@@ -8,56 +8,47 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  //Pembuatan Variable Yang Akan Dipakai
-  TextEditingController inputNama = new TextEditingController();
+  TextEditingController inputNama = TextEditingController();
+
   @override
-  Widget build (BuildContext context) {
+  Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Aplikasi Bengkel")),
-    backgroundColor: Color(0xFFB9C2BA),
-    ),
-    //Color(0xFFB9C2BA)
-    backgroundColor: Color(0xFFB9C2BA),
-    body:Column(
-      children: [
-        Center(
-          child: Container(
-            width: 300,
-            // height: 300,
-            color: Color(0xFFB9C2BA),
-            child: TextField(
-              // Dekorasi untuk Petunjuk Pengisian dan Garis
-              decoration: InputDecoration(
-                hintText: "Masukan Nama Anda",
-                filled: true,
-                border: OutlineInputBorder()
-                borderRadius: BorderRadius.all(Radius.circular(40)),
-            ),
-            ),
-            // kontroller unruk
-            controller: inputNama,
-            //Ketika Dikirim Nanti
-            onFieldSubmitted: (value) {
-              // isi blbla...
-              inputNama.text = values;
-            },
-          ),
-        ),
-      ),
-      //untuk kasih jarak antar widget
-      Padding(
-        padding: EdgeInsets.all(16)
+      appBar: AppBar(
+        title: Text("Blog"),
       ),
 
-    // Tombol
-    ElevatedButton(
-      child: Text("Tamoilkan Nama"),
-      onPressed: () {
-        print(inputNama.text);
-      }
-    )
-      ],
-    ),
+      backgroundColor: Color(0xFFFFFFFF),
+
+      body: Column(
+        children: [
+          Center(
+            child: Container(
+              width: 300,
+              color: Color.fromARGB(197, 220, 155, 155),
+
+              child: TextField(
+                decoration: InputDecoration(
+                  hintText: "Masukan Nama Anda",
+                  border: OutlineInputBorder(),
+                ),
+                controller: inputNama,
+                onSubmitted: (values) {
+                  inputNama.text = values;
+                },
+              ),
+            ),
+          ),
+
+          Padding(padding: EdgeInsets.all(16)
+          ),
+          ElevatedButton(
+            child: Text("Tampilkan Nama"),
+            onPressed: () {
+              print(inputNama.text);
+            },
+          ),
+        ],
+      ),
     );
   }
 }
