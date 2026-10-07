@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
-
+TextEditingController inputNama = new TextEditingController();
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
