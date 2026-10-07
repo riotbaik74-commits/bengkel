@@ -8,6 +8,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  //Pembuatan Variable Yang Akan Dipakai
   TextEditingController inputNama = new TextEditingController();
   @override
   Widget build (BuildContext context) {
